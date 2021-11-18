@@ -234,3 +234,7 @@
 172.18.0.1 - - [15/Nov/2021:14:55:17 +0000] "GET /catalogue/public/index.php/titre5 HTTP/1.1" 404 6845 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:94.0) Gecko/20100101 Firefox/94.0"
 172.18.0.1 - - [15/Nov/2021:15:22:50 +0000] "GET /catalogue/public/index.php/ HTTP/1.1" 200 1362 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:94.0) Gecko/20100101 Firefox/94.0"
 172.18.0.1 - - [15/Nov/2021:15:22:53 +0000] "GET /favicon.ico HTTP/1.1" 404 489 "http://localhost:8080/catalogue/public/index.php/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:94.0) Gecko/20100101 Firefox/94.0"
+172.19.0.1 - - [18/Nov/2021:09:28:09 +0000] "GET /catalogue/public/ HTTP/1.1" 200 1362 "http://localhost:8080/catalogue/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:94.0) Gecko/20100101 Firefox/94.0"
+172.19.0.1 - - [18/Nov/2021:09:32:17 +0000] "GET /catalogue/public/ HTTP/1.1" 200 177098 "http://localhost:8080/catalogue/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:94.0) Gecko/20100101 Firefox/94.0"
+172.19.0.1 - - [18/Nov/2021:09:32:22 +0000] "GET /catalogue/public/_ignition/health-check HTTP/1.1" 200 259 "http://localhost:8080/catalogue/public/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:94.0) Gecko/20100101 Firefox/94.0"
+172.19.0.1 - - [18/Nov/2021:09:32:22 +0000] "GET /catalogue/public/films HTTP/1.1" 200 243 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:94.0) Gecko/20100101 Firefox/94.0"

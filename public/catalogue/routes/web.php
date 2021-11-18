@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\listeMediasController;
 
 /*
 |--------------------------------------------------------------------------
@@ -12,29 +13,31 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
-Route::get('/{title}', function ($title) {
-    echo $title;
-})->where(['title' => '[a-zA-Z]+']);
+Route::get('/films', 'App\Http\Controllers\listeMediasController@helloWorld')->name('films');
 
-Route::get('/{firstname}/{surname}', function ($firstname, $surname) {
-    //return view('hello');
-    echo $firstname."\n";
-    echo $surname;
-    //return "Hello world";
+Route::get('/{prenom}/{nom}', function($prenom, $nom){
+    echo $prenom;
+    echo '3';
+    echo $nom;
 });
 
-Route::get('/', function () {
-    //return view('hello');
+Route::get('/template', function() {
+    return view('template');
+});
+
+Route::get('/{title}', function($title, $id) {
+    return $title;
+})->where(['title' => '[a-z]+']);
+
+Route::get('/', function() {
     echo "Liste des films";
-    //return "Hello world";
 })->name('listeFilms');
 
-Route::get('/', function () {
-    //return view('hello');
-    //echo "hello";
-    //return ("Hello world");
-    return('<!doctype html> <html lang="fr"> <head> <meta charset="UTF-8"> <title>Mauvaise façon</title> </head> <body> <p>Le fichier risque d\'être longggggg</p> </body> </html>');
+Route::get('/', function() {
+    // echo "Hello world!";
+    // return view('welcome');
+    return view('helloworld');
 });
 
-
+?>
 
